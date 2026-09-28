@@ -1,3 +1,9 @@
+const http = require('http');
+http.createServer((req, res) => {
+  res.write('Bot Aternos Activo 24/7');
+  res.end();
+}).listen(process.env.PORT || 3000);
+
 const mineflayer = require('mineflayer');
 
 // CONFIGURACIÓN DE TU SERVIDOR
